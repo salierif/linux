@@ -819,6 +819,11 @@ config SPI_XILINX
 
 	  Or for the DS570, see "XPS Serial Peripheral Interface (SPI) (v2.00b)"
 
+config SPI_ZGOO
+	tristate "ZGOO SPI Controller"
+	help
+	  This is the driver for the ZGOO SPI Controller.
+
 config SPI_XLP
 	tristate "Netlogic XLP SPI controller driver"
 	depends on CPU_XLP || ARCH_THUNDER2 || COMPILE_TEST
